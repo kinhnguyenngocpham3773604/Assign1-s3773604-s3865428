@@ -1,7 +1,5 @@
-# from dictionary.word_frequency import WordFrequency
-# from dictionary.base_dictionary import BaseDictionary
-from word_frequency import  WordFrequency
-from base_dictionary import BaseDictionary
+from dictionary.word_frequency import WordFrequency
+from dictionary.base_dictionary import BaseDictionary
 
 
 # ------------------------------------------------------------------------
@@ -50,7 +48,7 @@ class ListDictionary(BaseDictionary):
         # place holder for return
         return False
 
-    def autocomplete(self, prefix_word: str) -> [str]:
+    def autocomplete(self, prefix_word: str) -> [WordFrequency]:
         """
         return a list of 3 most-frequent words in the dictionary that have 'prefix_word' as a prefix
         @param prefix_word: word to be autocompleted

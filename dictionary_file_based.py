@@ -109,7 +109,6 @@ if __name__ == '__main__':
                 for item in list_words:
                     line = line + item.word + ": " + str(item.frequency) + "  "
                 output_file.write(line + ']\n')
-
             else:
                 print('Unknown command.')
                 print(line)

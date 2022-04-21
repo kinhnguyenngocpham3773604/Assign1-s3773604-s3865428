@@ -48,7 +48,7 @@ class HashTableDictionary(BaseDictionary):
         # place holder for return
         return False
 
-    def autocomplete(self, word: str) -> [str]:
+    def autocomplete(self, word: str) -> [WordFrequency]:
         """
         return a list of 3 most-frequent words in the dictionary that have 'word' as a prefix
         @param word: word to be autocompleted
