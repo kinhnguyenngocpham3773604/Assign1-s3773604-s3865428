@@ -10,12 +10,14 @@ from dictionary.word_frequency import WordFrequency
 # ------------------------------------------------------------------------
 
 class HashTableDictionary(BaseDictionary):
-
+    hashdictionary = dict()
     def build_dictionary(self, words_frequencies: [WordFrequency]):
         """
         construct the data structure to store nodes
         @param words_frequencies: list of (word, frequency) to be stored
         """
+
+        self.hashdictionary = {words_frequencies[i].word: words_frequencies[i].frequency for i in range(len(words_frequencies))}
         # TO BE IMPLEMENTED
 
     def search(self, word: str) -> int:

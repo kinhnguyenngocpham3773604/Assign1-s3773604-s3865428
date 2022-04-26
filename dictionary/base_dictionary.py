@@ -9,6 +9,8 @@ from dictionary.word_frequency import WordFrequency
 # -------------------------------------------------
 
 class BaseDictionary:
+    words_frequencies =[]
+
     def build_dictionary(self, words_frequencies: [WordFrequency]):
         """
         construct the data structure to store nodes
